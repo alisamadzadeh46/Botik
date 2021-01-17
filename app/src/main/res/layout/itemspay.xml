@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="data"
+            type="com.example.botik.model.ModelPay" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/Im_pay"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:image="@{data.image}">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amim"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/Im_pay"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@{data.title}">
+
+            </TextView>
+
+            <RadioButton
+                android:id="@+id/RB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RadioButton>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

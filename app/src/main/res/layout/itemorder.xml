@@ -1,0 +1,93 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.example.botik.model.ModelListOrder" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layoutDirection="rtl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amim"
+                    android:padding="10dp"
+                    android:text="@string/shomaresefaresh" />
+
+                <TextView
+                    android:id="@+id/sefaresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amim"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amim"
+                    android:padding="10dp"
+                    android:text="@string/countpardakht"
+                    android:textColor="#27AE60" />
+
+                <TextView
+                    android:id="@+id/gheymat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amim"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/pardakhtmoafagh"
+              android:background="@drawable/sucess"
+              android:fontFamily="@font/amim"
+              android:textColor="#fff"
+              android:textAlignment="center"
+              android:id="@+id/BtnSuccess"
+              android:layout_margin="8dp"
+              android:visibility="gone"
+              android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pardakhtmoafagh"
+                android:background="@drawable/addcart"
+                android:fontFamily="@font/amim"
+                android:textColor="#fff"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:id="@+id/BtnPrice"
+                android:layout_margin="8dp"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

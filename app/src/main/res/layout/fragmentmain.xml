@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layoutDirection="ltr"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/mainimg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-40dp"
+                    android:background="@drawable/maincorner"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/amim"
+                        android:text="@string/collections"
+                        android:textColor="#000"
+                        android:textSize="28sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            tools:ignore="RtlHardcoded">
+
+                            <LinearLayout
+                                android:layout_width="160dp"
+                                android:layout_height="455dp"
+                                android:background="@drawable/shape3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:orientation="vertical"
+                            tools:ignore="RtlHardcoded">
+
+                            <LinearLayout
+                                android:id="@+id/manto"
+                                android:layout_width="150dp"
+                                android:layout_height="145dp"
+                                android:background="@drawable/shape1"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?android:selectableItemBackground"
+                                android:orientation="horizontal"
+                                tools:ignore="UnusedAttribute">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/amim"
+                                    android:gravity="center"
+                                    android:text="@string/manto"
+                                    android:textColor="#FFF"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="145dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="145dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/shape2" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
+

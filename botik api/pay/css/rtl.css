@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Samim';
+    src: url('../fontawesome-free/webfonts/Samim.woff') format('woff');
+url('../fontawesome-free/webfonts/Samim.eot?')    format('eot');
+url('../fontawesome-free/webfonts/Samim.ttf?')    format('truetype');
+
+}
+
+body {
+    direction: rtl !important;
+    text-align: right !important;
+
+}
+
+.asirefontshod, .focus-input100::after {
+    font-family: "Samim", sans-serif;
+}
+
+.errors {
+    color: #5b80b2;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.f{
+    display: block;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+
+}
